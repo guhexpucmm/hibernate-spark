@@ -1,0 +1,23 @@
+group 'com.guhex'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    // https://mvnrepository.com/artifact/com.sparkjava/spark-core
+    compile group: 'com.sparkjava', name: 'spark-core', version: '2.7.2'
+    compile 'com.h2database:h2:1.4.191'
+    // https://mvnrepository.com/artifact/com.sparkjava/spark-template-freemarker
+    compile group: 'com.sparkjava', name: 'spark-template-freemarker', version: '2.7.1'
+    compile group: 'com.sparkjava', name: 'spark-debug-tools', version: '0.5'
+    compile group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.21'
+    compile group: 'org.hibernate', name: 'hibernate-core', version: '5.2.5.Final'
+    compile group: 'org.freemarker', name: 'freemarker', version: '2.3.14'
+}
